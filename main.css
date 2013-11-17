@@ -1,0 +1,92 @@
+/** {
+  border: 1px solid red;
+  box-sizing: border-box;
+}*/
+
+html, body  {
+  background: black;
+  background-color: black !important;
+}
+
+.show {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in-out, top 2s;
+  transition: opacity 2s ease-in-out, top 2s;
+}
+
+#nav.show {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+#body {
+  margin-top: -80px;
+}
+
+.hide { 
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out, top 2s;
+  transition: opacity 2s ease-in-out, top 2s;
+}
+
+#nav {
+  background-color: black;
+  background-image: url(images/slowdown.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 75px;
+  width: 100%;
+  border-bottom: #f0eb6d solid 3px
+}
+
+.navbar-default {
+  background-color: black;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 99;
+}
+
+.hero-image { 
+  background-image: url(images/easytiger-fade.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 770px;
+}
+
+#atmos {
+  background-color: black;
+  background-image: url(images/atmosphere.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 75px;
+  width: 100%;
+  border-bottom: #f0eb6d solid 3px;
+  margin: 20px;
+}
+
+.orange  {
+  color: #f36d51 !important;
+}
+
+.banners {
+  text-align: center;
+}
+
+.images {
+  margin: 20px;
+  text-align: center;
+}
+
+img {
+  max-height: 400px;
+}
+
+.images img {
+  margin: 0 20px;
+}

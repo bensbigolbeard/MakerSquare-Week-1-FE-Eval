@@ -1,147 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-        <style type="text/css">
-
-          /** {
-            border: 1px solid red;
-            box-sizing: border-box;
-          }*/
-
-          html, body  {
-            background: black;
-            background-color: black !important;
-          }
-
-          .show {
-            opacity: 1;
-            -webkit-transition: opacity 2s ease-in-out, top 2s;
-            transition: opacity 2s ease-in-out, top 2s;
-          }
-
-          #nav.show {
-            position: fixed;
-            z-index: 99;
-            width: 100%;
-          }
-
-          #body {
-            margin-top: -80px;
-          }
-
-          .hide { 
-            opacity: 0;
-            -webkit-transition: opacity 2s ease-in-out, top 2s;
-            transition: opacity 2s ease-in-out, top 2s;
-          }
-
-          #nav {
-            background-color: black;
-            background-image: url(images/slowdown.png);
-            background-repeat: no-repeat;
-            background-position: center; 
-            height: 75px;
-            width: 100%;
-            border-bottom: #f0eb6d solid 3px
-          }
-
-          .navbar-default {
-            background-color: black;
-          }
-
-          .hero-image { 
-            
-            background-image: url(images/easytiger-fade.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 770px;
-          }
-
-          #atmos {
-            background-color: black;
-            background-image: url(images/atmosphere.png);
-            background-repeat: no-repeat;
-            background-position: center; 
-            height: 75px;
-            width: 100%;
-            border-bottom: #f0eb6d solid 3px
-          }
-
-          .orange  {
-            color: #f36d51 !important;
-          }
-
-          .banners {
-            text-align: center;
-          }
-
-        </style>
         <!-- Latest compiled and minified CSS --> <!-- Bootstrap Version 3.0 -->
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
         <!-- Version 2.3.3 -->
         <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-        
+        <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery-1.9.0.min.js"></script>
         <script src="easyTiger.js"></script>
-        <title></title>
+        <title>Easy Tiger | Austin, Tx</title>
     </head>
     <body>
-    <div class="hero-image"> 
-      <div id="nav" class="hide show">
-      </div>
-    </div>
-    <div>
-      <div id="body" class="container hide show">
-        <div class="row clearfix">
-          <div class="col-md-4 column banners">
-            <img src="images/left.png">
-          </div>
-          <div class="col-md-4 column banners">
-            <img src="images/center.png">
-          </div>
-          <div class="col-md-4 column banners">
-            <img src="images/right.png">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="atmos" class="">
-    </div>
-    <div class="container">
-      <div class="row clearfix">
-        <div class="col-md-6 column">
-          <h2>
-            Heading
-          </h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-          </p>
-          <p>
-            <a class="btn" href="#">View details »</a>
-          </p>
-        </div>
-        <div class="col-md-6 column">
-          <div class="media">
-             <a href="#" class="pull-left"><img src="http://lorempixel.com/64/64/" class="media-object" alt='' /></a>
-            <div class="media-body">
-              <h4 class="media-heading">
-                Nested media heading
-              </h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-              <div class="media">
-                 <a href="#" class="pull-left"><img src="http://lorempixel.com/64/64/" class="media-object" alt='' /></a>
-                <div class="media-body">
-                  <h4 class="media-heading">
-                    Nested media heading
-                  </h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                </div>
-              </div>
+        <div class="hero-image"> 
+            <div id="nav" class="hide show">
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </body>
+        <div>
+            <div id="body" class="container hide show">
+                <div class="row clearfix">
+                    <div class="col-md-4 column banners">
+                        <img src="images/left.png">
+                    </div>
+                    <div class="col-md-4 column banners">
+                        <img src="images/center.png">
+                    </div>
+                    <div class="col-md-4 column banners">
+                        <img src="images/right.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="atmos"></div>
+            <div class="">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-lg-12 column images">
+                            <img src="images/breadshop_full.jpg">
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-12 column">
+                            <div class="images">
+                                <img src="images/arrow.jpg">
+                                <img src="images/bathroom.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-12 column">
+                            <div class="images">
+                                <img src="images/bar-downstairs.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </body>
 </html>
