@@ -18,10 +18,18 @@
             opacity: 1;
             -webkit-transition: opacity 2s ease-in-out, top 2s;
             transition: opacity 2s ease-in-out, top 2s;
+          }
+
+          #nav.show {
             position: fixed;
             z-index: 99;
             width: 100%;
           }
+
+          #body {
+            margin-top: -80px;
+          }
+
           .hide { 
             opacity: 0;
             -webkit-transition: opacity 2s ease-in-out, top 2s;
@@ -52,8 +60,14 @@
             height: 770px;
           }
 
-          .pull-up { 
-            margin-top: -80px;
+          #atmos {
+            background-color: black;
+            background-image: url(images/atmosphere.png);
+            background-repeat: no-repeat;
+            background-position: center; 
+            height: 75px;
+            width: 100%;
+            border-bottom: #f0eb6d solid 3px
           }
 
           .orange  {
@@ -76,18 +90,11 @@
     </head>
     <body>
     <div class="hero-image"> 
-      <div id="nav" class="container hide show">
-        <div class="row clearfix">
-          <div class="col-md-12 column">
-            <nav class="" >
-               
-            </nav>
-          </div>
-        </div>
+      <div id="nav" class="hide show">
       </div>
     </div>
-    <div class="pull-up">
-      <div class="container">
+    <div>
+      <div id="body" class="container hide show">
         <div class="row clearfix">
           <div class="col-md-4 column banners">
             <img src="images/left.png">
@@ -100,6 +107,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="atmos" class="">
     </div>
     <div class="container">
       <div class="row clearfix">

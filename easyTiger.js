@@ -1,13 +1,11 @@
 jQuery(document).ready(function($){	
-	$(window).scroll( function(event){
-    var top = $(this).scrollTop();
-            
-    $("#nav").toggleClass(" show", top > 000);
-    $("#nav").toggleClass(" hide", top > 000);
-    $("#nav").toggleClass(" hide", top > 800);
+	$(window).scroll(function(event){
+	    var top = $(document).scrollTop();
+	   
+	    $("#nav").toggleClass(" hide", top < 440);
 
-    $(".one").toggleClass(" fixed", top > 340);
+    	$("#body").toggleClass(" hide", top < 200 );
 
-    $(".two").toggleClass(" hide", top < 1200 || top > 1700);
+    // $(".two").toggleClass(" hide", top < 1200 || top > 1700);
   });
 });
