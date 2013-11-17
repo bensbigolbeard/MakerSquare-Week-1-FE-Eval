@@ -9,23 +9,51 @@
             box-sizing: border-box;
           }*/
 
-          html, body, .container {
+          html, body  {
             background: black;
             background-color: black !important;
           }
 
-         /* body {
-            background: black;
-            background-color: black; 
-          }*/
+          .show {
+            opacity: 1;
+            -webkit-transition: opacity 2s ease-in-out, top 2s;
+            transition: opacity 2s ease-in-out, top 2s;
+            position: fixed;
+            z-index: 99;
+            width: 100%;
+          }
+          .hide { 
+            opacity: 0;
+            -webkit-transition: opacity 2s ease-in-out, top 2s;
+            transition: opacity 2s ease-in-out, top 2s;
+          }
 
-          .hero-image {
-            
-            background-image: url(images/breadshop_full.jpg);
-            background-size: 1155px 500px;
-
+          #nav {
+            background-color: black;
+            background-image: url(images/slowdown.png);
             background-repeat: no-repeat;
+            background-position: center; 
+            height: 75px;
+            width: 100%;
+            border-bottom: #f0eb6d solid 3px
+          }
+
+          .navbar-default {
+            background-color: black;
+          }
+
+          .hero-image { 
             
+            background-image: url(images/easytiger-fade.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 770px;
+          }
+
+          .pull-up { 
+            margin-top: -80px;
           }
 
           .orange  {
@@ -41,103 +69,39 @@
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
         <!-- Version 2.3.3 -->
         <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        
+        <script src="jquery-1.9.0.min.js"></script>
+        <script src="easyTiger.js"></script>
         <title></title>
     </head>
-  <body>
-    <div class="container">
-      <div class="row clearfix">
-        <div class="col-md-12 column">
-          <nav class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
-            </div>
-            
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active">
-                  <a href="#">Link</a>
-                </li>
-                <li>
-                  <a href="#">Link</a>
-                </li>
-                <li class="dropdown">
-                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">Action</a>
-                    </li>
-                    <li>
-                      <a href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a href="#">Something else here</a>
-                    </li>
-                    <li class="divider">
-                    </li>
-                    <li>
-                      <a href="#">Separated link</a>
-                    </li>
-                    <li class="divider">
-                    </li>
-                    <li>
-                      <a href="#">One more separated link</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" />
-                </div> <button type="submit" class="btn btn-default">Submit</button>
-              </form>
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="#">Link</a>
-                </li>
-                <li class="dropdown">
-                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">Action</a>
-                    </li>
-                    <li>
-                      <a href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a href="#">Something else here</a>
-                    </li>
-                    <li class="divider">
-                    </li>
-                    <li>
-                      <a href="#">Separated link</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            
-          </nav>
-          <div class="jumbotron hero-image">
-            <h1>
-              Easy Tiger
-            </h1>
-            <p>
-              This is a template for a simple marketing or informational website. 
-            </p>
+    <body>
+    <div class="hero-image"> 
+      <div id="nav" class="container hide show">
+        <div class="row clearfix">
+          <div class="col-md-12 column">
+            <nav class="" >
+               
+            </nav>
           </div>
         </div>
       </div>
-      <div class="row clearfix">
-        <div class="col-md-4 column banners">
-          <img src="images/left.png">
-        </div>
-        <div class="col-md-4 column banners">
-          <img src="images/center.png">
-        </div>
-        <div class="col-md-4 column banners">
-          <img src="images/right.png">
+    </div>
+    <div class="pull-up">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-md-4 column banners">
+            <img src="images/left.png">
+          </div>
+          <div class="col-md-4 column banners">
+            <img src="images/center.png">
+          </div>
+          <div class="col-md-4 column banners">
+            <img src="images/right.png">
+          </div>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="row clearfix">
         <div class="col-md-6 column">
           <h2>
