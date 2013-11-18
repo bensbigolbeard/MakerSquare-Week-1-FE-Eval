@@ -1,8 +1,8 @@
 /** {
   border: 1px solid red;
   box-sizing: border-box;
-}*/
-
+}
+*/
 html, body  {
   background: black;
   background-color: black !important;
@@ -49,7 +49,7 @@ html, body  {
   z-index: 99;
 }
 
-.hero-image { 
+#hero-image { 
   background-image: url(images/easytiger-fade.png);
   background-size: cover;
   background-position: center;
@@ -58,35 +58,59 @@ html, body  {
   height: 770px;
 }
 
-#atmos {
+.dotfix{
+  margin-left: -4px;
+}
+.section-header {
   background-color: black;
-  background-image: url(images/atmosphere.png);
-  background-size: 200px;
   background-repeat: no-repeat;
   background-position: center; 
   height: 75px;
   width: 100%;
+  border-top: #f0eb6d solid 3px;
   border-bottom: #f0eb6d solid 3px;
-  margin: 20px;
+  margin: 20px 0;
+}
+#atmos {
+  background-image: url(images/atmosphere2.png);
+  background-size: 220px;
 }
 
+#food {
+  background-image: url(images/food.png);
+  background-size: 220px;
+}
+
+.col-lg-12 {
+  padding: 0;
+}
 .orange  {
   color: #f36d51 !important;
 }
 
-.banners {
+.center-img {
   text-align: center;
 }
 
 .images {
-  margin: 20px;
+  margin: 15px;
   text-align: center;
 }
 
-img {
-  max-height: 400px;
+.images img {
+  max-height: 375px;
 }
 
-.images img {
-  margin: 0 20px;
+.margin {
+  margin: 0 15px;
+}
+
+.margin-footer {
+  margin: 0 30px;
+}
+
+#footer {
+  border-top: #f0eb6d solid 3px;
+  margin: 20px 0;
+  padding-top: 20px;
 }

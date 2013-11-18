@@ -6,8 +6,17 @@ jQuery(document).ready(function($){
 
     	$("#body").toggleClass(" hide", top < 200 );
 
-    	// $("#atmos").toggleClass(" fixed", top < 800 );
+    	$("div.1").toggleClass(" hide", top < 1000 );
+    	$("div.2").toggleClass(" hide", top < 1300 );
+    	$("div.3").toggleClass(" hide", top < 1600 );
+    	$("div.4").toggleClass(" hide", top < 2200 );
+    	$("div.5").toggleClass(" hide", top < 2600 );
+    	$("div.6").toggleClass(" hide", top < 3000 );
 
-    // $(".two").toggleClass(" hide", top < 1200 || top > 1700);
-  });
+    	$('#backToTop').click(function(){
+        	$("html, body").stop().animate({ scrollTop: 0 }, "slow");
+        	//$("html, body").scrollTop(0); //For without animation 
+        	return false;
+    	});
+  	});
 });
