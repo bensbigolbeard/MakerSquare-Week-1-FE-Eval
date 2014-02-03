@@ -13,10 +13,19 @@ jQuery(document).ready(function($){
     	$("div.5").toggleClass(" hide", top < 2600 );
     	$("div.6").toggleClass(" hide", top < 3000 );
 
-    	$('#backToTop').click(function(){
-        	$("html, body").stop().animate({ scrollTop: 0 }, "slow");
-        	//$("html, body").scrollTop(0); //For without animation 
-        	return false;
-    	});
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').stop().animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
   	});
 });

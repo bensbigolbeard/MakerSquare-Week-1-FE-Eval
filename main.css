@@ -105,12 +105,23 @@ html, body  {
   margin: 0 15px;
 }
 
-.margin-footer {
-  margin: 0 30px;
+.margin-footer-tiger {
+  margin: -10px 0px -3px 52px;
+}
+
+.margin-footer-text {
+  margin: 0 0px 0 45px;
 }
 
 #footer {
   border-top: #f0eb6d solid 3px;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   padding-top: 20px;
+}
+
+.footer-text {
+  color: #f36d51;
+  padding-left: 48px;
+  font-weight: bold;
+  text-decoration: none;
 }
