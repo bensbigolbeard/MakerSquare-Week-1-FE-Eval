@@ -50,7 +50,7 @@ html, body  {
 }
 
 #hero-image { 
-  background-image: url(images/easytiger-fade.png);
+  background-image: url(images/easytiger-fade-opt.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
